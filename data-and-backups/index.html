@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Medication App Data &amp; Backups · Adz Dev Coding</title>
+  <meta name="description" content="How Medication App stores local journal data and handles CSV, JSON, SQLite, reminders, and Android backup.">
+  <meta name="theme-color" content="#110e14">
+  <meta property="og:title" content="Medication App Data &amp; Backups">
+  <meta property="og:description" content="A clear explanation of local journal storage, exports, imports, reminders, and Android backup behavior.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://medication-app.pl/data-and-backups/">
+  <link rel="canonical" href="https://medication-app.pl/data-and-backups/">
+  <link rel="icon" href="../assets/medication-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="../" aria-label="Medication App home">
+        <img src="../assets/medication-mark.svg" alt="" width="44" height="44">
+        <span>Medication App</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../">Home</a>
+        <a href="../privacy/">Privacy</a>
+        <a aria-current="page" href="../data-and-backups/">Data &amp; backups</a>
+        <a href="../support/">Support</a>
+      </nav>
+    </header>
+
+    <main id="main" class="page">
+      <p class="eyebrow">Data &amp; backups</p>
+      <h1>Your journal stays local unless you choose otherwise</h1>
+      <p class="lead">Medication App uses a local database for the medication catalogue and intake history. Export, import, reminders, and Android backup are separate user or platform-controlled paths.</p>
+
+      <div class="card-grid compact-grid">
+        <article class="card">
+          <h2>Local Room database</h2>
+          <p>The app stores medication entries, saved amounts, intake records, timestamps, and related state in a database inside the app's local Android storage.</p>
+        </article>
+        <article class="card">
+          <h2>No developer cloud account</h2>
+          <p>Medication App does not require an account and does not use an Adz Dev Coding cloud database for your medication journal.</p>
+        </article>
+        <article class="card">
+          <h2>Local diagnostics</h2>
+          <p>Bounded troubleshooting events may be kept locally. They are not automatically transmitted to the developer.</p>
+        </article>
+        <article class="card">
+          <h2>Optional reminders</h2>
+          <p>Android notification and exact-alarm access may be used to display reminders you configure on the device.</p>
+        </article>
+      </div>
+
+      <section class="section">
+        <h2>Export and import options</h2>
+        <dl class="details-list">
+          <div><dt>CSV export</dt><dd>Creates a spreadsheet-friendly copy of intake history. On supported Android versions it may save directly to Documents, with the system picker used as a fallback.</dd></div>
+          <div><dt>JSON backup</dt><dd>Creates a structured backup through the Android document picker. You choose the destination.</dd></div>
+          <div><dt>SQLite backup</dt><dd>Creates a raw copy of the app database for external analysis. This file may contain the complete local journal.</dd></div>
+          <div><dt>JSON import</dt><dd>Reads a backup selected through Android and replaces the current local journal when the import succeeds.</dd></div>
+        </dl>
+      </section>
+
+      <section class="notice">
+        <h2>Exports may contain sensitive information</h2>
+        <p>CSV, JSON, and SQLite files can include medication names, amounts, units, and intake dates or times. Do not publish or casually share them. Protect them according to the sensitivity of your journal.</p>
+      </section>
+
+      <section class="section">
+        <h2>Android and third-party providers set their own boundaries</h2>
+        <ul class="plain-list">
+          <li>The Android document picker may offer local storage or third-party providers installed on your device.</li>
+          <li>A cloud provider receives an exported file only when you choose that provider as the destination.</li>
+          <li>Android backup or device transfer may copy app data according to your platform and account settings.</li>
+          <li>Adz Dev Coding does not operate those storage or backup services.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Your controls</h2>
+        <ul class="plain-list">
+          <li>Review the destination before exporting a backup.</li>
+          <li>Keep independent copies only where you trust the storage location.</li>
+          <li>Delete exported files separately when they are no longer needed.</li>
+          <li>Review notification and alarm permissions in Android settings.</li>
+          <li>Review Android backup and device-transfer settings for your account and device.</li>
+          <li>Clear app data or uninstall to remove local app storage, subject to platform backup and restore behavior.</li>
+        </ul>
+        <p>For the complete disclosure, read the <a href="../privacy/">Medication App Privacy Policy</a>.</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div><strong>Medication App</strong><br>Published by Adz Dev Coding.</div>
+      <div>
+        <a href="../privacy/">Privacy Policy</a> ·
+        <a href="../data-and-backups/">Data &amp; backups</a> ·
+        <a href="../support/">Support</a><br>
+        <a href="mailto:support@medication-app.pl">support@medication-app.pl</a><br>
+        © 2026 Adz Dev Coding
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
