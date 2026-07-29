@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Lifestyle Tracking logo</title>
+  <desc id="desc">A white check mark surrounded by colourful tracking segments on a deep navy rounded square.</desc>
+  <defs>
+    <linearGradient id="bg" x1="32" y1="24" x2="224" y2="232" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#172754"/>
+      <stop offset="1" stop-color="#081127"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#020713" flood-opacity=".58"/>
+    </filter>
+  </defs>
+  <rect x="8" y="8" width="240" height="240" rx="58" fill="url(#bg)"/>
+  <g fill="none" stroke-width="16" stroke-linecap="round" transform="rotate(-90 128 128)">
+    <circle cx="128" cy="128" r="78" stroke="#B388FF" stroke-dasharray="58 432" stroke-dashoffset="0"/>
+    <circle cx="128" cy="128" r="78" stroke="#448AFF" stroke-dasharray="58 432" stroke-dashoffset="-98"/>
+    <circle cx="128" cy="128" r="78" stroke="#FFD740" stroke-dasharray="58 432" stroke-dashoffset="-196"/>
+    <circle cx="128" cy="128" r="78" stroke="#69F0AE" stroke-dasharray="58 432" stroke-dashoffset="-294"/>
+    <circle cx="128" cy="128" r="78" stroke="#00E5FF" stroke-dasharray="58 432" stroke-dashoffset="-392"/>
+  </g>
+  <path d="M78 130 111 163 180 91" fill="none" stroke="#020713" stroke-width="31" stroke-linecap="round" stroke-linejoin="round" opacity=".5" filter="url(#shadow)"/>
+  <path d="M78 122 111 155 180 83" fill="none" stroke="#FFFFFF" stroke-width="25" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
