@@ -1,0 +1,38 @@
+{
+  "id": "/",
+  "name": "Lifestyle Tracking",
+  "short_name": "Lifestyle",
+  "description": "A private, local-first Android companion for recording custom daily items, reviewing history and exploring clear summaries.",
+  "lang": "en-GB",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0b1226",
+  "theme_color": "#0b1226",
+  "categories": [
+    "lifestyle",
+    "productivity"
+  ],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/assets/icons/lifestyle-tracking-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/lifestyle-tracking-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/lifestyle-tracking-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
